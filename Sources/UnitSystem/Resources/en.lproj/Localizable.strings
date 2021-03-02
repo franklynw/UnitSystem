@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+
+  Created by Franklyn Weber on 15/01/2021.
+  
+*/
+
+"UnitSystem_imperial" = "Imperial";
+"UnitSystem_metric" = "Metric";
+"UnitSystem_all" = "All";
+
+"Units_none" = "No units";
+
+"Units_kg_short" = "kg";
+"Units_g_short" = "g";
+"Units_lb_short" = "lb";
+"Units_oz_short" = "oz";
+"Units_ltr_short" = "l";
+"Units_ml_short" = "ml";
+"Units_pt_short" = "pt";
+"Units_fl_short" = "fl oz";
+"Units_cupDry_short" = "cups";
+"Units_cupWet_short" = "cups";
+"Units_m_short" = "m";
+"Units_cm_short" = "cm";
+"Units_mm_short" = "mm";
+"Units_yd_short" = "yd";
+"Units_ft_short" = "ft";
+"Units_in_short" = "in";
+"Units_tsp_short" = "tsp";
+"Units_tbsp_short" = "tbsp";
+"Units_slice_short" = "slices";
+"Units_cup_short" = "cups";
+"Units_serving_short" = "servings";
+
+"Units_kg" = "kilogram";
+"Units_g" = "gram";
+"Units_lb" = "pound";
+"Units_oz" = "ounce";
+"Units_ltr" = "litre";
+"Units_ml" = "millilitre";
+"Units_pt" = "pint";
+"Units_fl" = "fluid ounce";
+"Units_cupDry" = "cup";
+"Units_cupWet" = "cup";
+"Units_m" = "metre";
+"Units_cm" = "centimetre";
+"Units_mm" = "millimetre";
+"Units_yd" = "yard";
+"Units_ft" = "foot";
+"Units_in" = "inch";
+"Units_tsp" = "teaspoon";
+"Units_tbsp" = "tablespoon";
+"Units_slice" = "slice";
+"Units_cup" = "cup";
+"Units_serving" = "serving";
+
+"Units_kg_plural" = "kilograms";
+"Units_g_plural" = "grams";
+"Units_lb_plural" = "pounds";
+"Units_oz_plural" = "ounces";
+"Units_ltr_plural" = "litres";
+"Units_ml_plural" = "millilitres";
+"Units_pt_plural" = "pints";
+"Units_fl_plural" = "fluid ounces";
+"Units_cupDry_plural" = "cups";
+"Units_cupWet_plural" = "cups";
+"Units_m_plural" = "metres";
+"Units_cm_plural" = "centimetres";
+"Units_mm_plural" = "millimetres";
+"Units_yd_plural" = "yards";
+"Units_ft_plural" = "feet";
+"Units_in_plural" = "inches";
+"Units_tsp_plural" = "teaspoons";
+"Units_tbsp_plural" = "tablespoons";
+"Units_slice_plural" = "slices";
+"Units_cup_plural" = "cups";
+"Units_serving_plural" = "servings";
+"Units_none_plural" = "No units";
+
+"Units_cupDry_unique" = "cups (dry)";
+"Units_cupWet_unique" = "cups (liquid)";
+
+"Units_fl_oz" = "fl oz";
+"Units_fl_oz_plural" = "fl oz";
+
+"Units_conversionWarning_toCupsDry" = "This will only be an approximate conversion, as the exact value will depend on the substance being measured";
+"Units_importWarning_cups" = "Cup type (dry / liquid) ?";
+"Units_Convert" = "Convert";
+"Units_option_cupDry" = "Dry";
+"Units_option_cupWet" = "Liquid";
