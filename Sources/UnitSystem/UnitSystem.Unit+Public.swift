@@ -77,6 +77,11 @@ extension UnitSystem.Unit {
         return _importWarning
     }
     
+    /// The main unit for the unit type, depending on the unit system (eg, returns kg for metric weight)
+    public func mainUnit(for system: UnitSystem = .default) -> UnitSystem.Unit? {
+        return _mainUnit(for: system)
+    }
+    
     /// An array of units which the receiver can be converted into
     public var conversionOptions: [UnitSystem.Unit] {
         return _conversionOptions

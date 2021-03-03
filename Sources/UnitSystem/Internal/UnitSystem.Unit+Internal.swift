@@ -12,6 +12,57 @@ extension UnitSystem.Unit {
     
     // NB - some of these functions are not safe & require knowledge of the units to avoid crashing
     
+    enum UnitType {
+        case weight
+        case volume
+        case distance
+        case misc
+        case none
+    }
+    
+    var value: Double {
+        switch self {
+        case .kg: return 1
+        case .g: return 0.001
+        case .lb: return 0.45359
+        case .oz: return 0.02835
+        case .cupDry: return 0.2
+        case .ltr: return 1
+        case .ml: return 0.001
+        case .pt: return Locale.isUS ? 0.473 : 0.568
+        case .fl: return Locale.isUS ? 0.02956 : 0.0284
+        case .cupWet: return Locale.isUS ? 0.23659 : 0.25
+        case .m: return 1
+        case .cm: return 0.01
+        case .mm: return 0.001
+        case .yd: return 0.9144
+        case .ft: return 0.3048
+        case .in: return 0.0254
+        case .tsp: return 1
+        case .tbsp: return 1
+        case .slice: return 1
+        case .serving: return 1
+        case .none: return 1
+        }
+    }
+    
+    var unitType: UnitType {
+        switch self {
+        case .kg, .g, .lb, .oz, .cupDry:
+            return .weight
+        case .ltr, .ml, .pt, .fl, .cupWet:
+            return .volume
+        case .m, .cm, .mm, .yd, .ft, .in:
+            return .distance
+        case .tsp, .tbsp, .slice, .serving:
+            return .misc
+        case .none:
+            return .none
+        }
+    }
+    
+    
+    
     var importOptionTitle: String {
         switch self {
         case .cupDry:
@@ -28,6 +79,20 @@ extension UnitSystem.Unit {
         case .g, .ml, .mm: return 0
         case .oz, .fl, .cm, .in, .none, .serving, .tsp, .tbsp, .slice: return 1
         case .kg, .lb, .ltr, .pt, .cupDry, .cupWet, .m, .yd, .ft: return 2
+        }
+    }
+    
+    var allConversionOptions: [UnitSystem.Unit] {
+        
+        switch unitType {
+        case .weight:
+            return [.kg, .g, .lb, .oz, .cupDry]
+        case .volume:
+            return [.ltr, .ml, .pt, .fl, .cupWet]
+        case .distance:
+            return [.m, .cm, .mm, .yd, .ft, .in]
+        case .misc, .none:
+            return []
         }
     }
     
