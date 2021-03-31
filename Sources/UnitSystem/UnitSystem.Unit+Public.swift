@@ -14,7 +14,7 @@ extension UnitSystem.Unit {
     /// Will default to .none if there are no matches
     /// - Parameter candidate: a String
     public init(candidate: String) {
-        self.init(candidate)
+        self.init(rawValue: candidate)
     }
     
     /// The unit's long name, depending on the quantity
